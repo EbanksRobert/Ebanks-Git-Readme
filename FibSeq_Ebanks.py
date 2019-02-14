@@ -15,7 +15,9 @@ for i in range(1,n+1):
     
     #print
     x=F1+F0
-    print((x**2)-F0*(2*x+F1)==((-1)**(i-1)))
+    v=(x**2)-F0*(2*x+F1)
+    w=(-1)**(i-1)
+    print(v,w,v==w)
     F0=F1
     F1=x
     e.append(x)
