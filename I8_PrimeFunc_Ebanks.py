@@ -15,6 +15,7 @@ def prime_check(x):
     for i in range(2,x):
         if x/i==int(x/i):
             l.append(x)
+            break
     if v==l:
         return(True)
     else:   
