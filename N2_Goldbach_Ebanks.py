@@ -34,5 +34,5 @@ for i in range (1,6000):
                         Goldbach = True
                         break
         if Goldbach==False:
-            print('Hey doing this assignment made me wanna die. Oh and Goldbach fails because of',i)
+            print('Goldbach fails because of',i)
             break
