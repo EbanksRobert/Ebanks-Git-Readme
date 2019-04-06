@@ -6,7 +6,7 @@ Created on Fri Apr  5 18:13:58 2019
 """
 import numpy as np
 
-P=40
+P=200
 o= np.array([['p','# of Residuals']])
 z= np.array([['p','-1 is a residue']])
 def Res(x):#turned this into a def function because i already had it written out before I tried to use arrays
@@ -36,14 +36,12 @@ def prime_check(x):
     if v==l:
         return(True)
     else:
-        return(False)               
-    
-    
-for k in range(1,P+1):  
+        return(False)
+for k in range(2,P+1):  
     if prime_check(k)==True:
         q=np.array([[k, Res(k)]])
         o=np.vstack((o,q))
-for k in range(1,P+1):
+for k in range(2,P+1):
     if prime_check(k)==True:
         e=np.array([[k,Neg(k)]])
         z=np.vstack((z,e))
