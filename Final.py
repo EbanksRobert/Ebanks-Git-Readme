@@ -17,7 +17,7 @@ h=[]
 l = list(map(list, itertools.product([0, 1], repeat=2**n)))
 p = list(map(list, itertools.product([0, 1], repeat=n)))  
 for i in l:
-    if i[0:n] ==[0]*n and i[n]==1 and i[-1]==1and [1]*n in list(d(i)) and [1]*(n+1) not in list(c(i)) :
+    if i[0:n] ==[0]*n and i[n]==1 and i[-1]==1 and [1]*n in list(d(i)) and [1]*(n+1) not in list(c(i)) :
         h.append(i)
 
 print('Hey here is the # of solutions:',len(h),'Here are the solutions',h)
